@@ -1,0 +1,27 @@
+@charset "UTF-8";
+body{
+    background-image: linear-gradient(to right, mediumpurple, indigo);
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+main{
+    width: 600px;
+    padding: 10px;
+    margin:auto;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px;
+
+    background-color: white;
+}
+h1{
+    text-align: center;
+    text-shadow: 1px 1px 1px rgb(57, 2, 96);
+    color: indigo;
+}
+h2{
+    
+    color: mediumpurple;
+}
+p{
+    text-align: justify;
+}
