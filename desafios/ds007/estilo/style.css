@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+body{
+    font-family: cursive;
+    margin: 0;
+}
+
+header{
+    background-color: black;
+    padding: 60px 0 60px 0;
+    margin: 0 0 0 0;
+}
+
+header > h1{
+    color: white;
+    text-align: center;
+    margin: 0 0 0 0;
+    font-size: 3em;
+}
+
+header > p{
+    color: white;
+    text-align: center;
+}
+
+a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+footer{
+    background-color: black;
+    padding: 1px 0 1px 0;
+}
+
+footer > p{
+    color: white;
+    text-align: center;
+}
