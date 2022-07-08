@@ -1,13 +1,21 @@
 @charset "UTF-8";
 
+*{
+    padding: 0;
+    margin: 0;
+}
+
 body{
+    min-height: 100vh;
+    
     font-family: cursive;
     margin: 0;
 }
 
 header{
+    width: 100%;
     background-color: black;
-    padding: 60px 0 60px 0;
+    padding: 50px 0 50px 0;
     margin: 0 0 0 0;
 }
 
@@ -15,6 +23,7 @@ header > h1{
     color: white;
     text-align: center;
     margin: 0 0 0 0;
+    font-variant: small-caps;
     font-size: 3em;
 }
 
@@ -25,12 +34,36 @@ header > p{
 
 a{
     color: white;
-    font-weight: bold;
+    font-weight: bolder;
     text-decoration: none;
 }
 
 a:hover{
     text-decoration: underline;
+}
+
+main{
+    font-size: 1.8em;
+    line-height: 2em;
+}
+
+article{
+   padding-left: 30px;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+
+article.shadow{
+    background-color: rgba(51, 51, 51);
+    padding: 5px;
+}
+
+article.shadow > p{
+    margin-left: 30px;
+    text-shadow: 1px 1px 0 black;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.496);
+    width: 400px;
 }
 
 footer{
