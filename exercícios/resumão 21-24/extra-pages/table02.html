@@ -26,19 +26,51 @@
         }
 
         table{
+            position: relative;
+
             border-collapse: collapse;
             background-color: white;
 
             width: 700px;
         }
 
+        caption{
+            background-color: lightgray;
+            padding: 10px;
+
+            font-weight: bold;
+            font-size: 1.5em;
+        }
+
+        thead > tr > th{
+            position: sticky;
+            top: -1%;
+            background-color: rgb(71, 71, 71);
+        }
+
+        #thead, tfoot{
+            background-color: rgb(71, 71, 71);
+        }
+
         tbody > tr:nth-child(even){
             background-color: lightgray;
+        }
+
+        th, td.tdtfoot{
+            color: white;
+        }
+
+        td.tdtfoot{
+            text-align: center;
         }
 
         th, td{
             padding: 15px;
             border: 1px solid black;
+        }
+
+        p{
+            color: rgba(0, 0, 0, 0);
         }
 
         a{
@@ -63,10 +95,10 @@
         <table>
             <caption>Studio Ghibli Filmography</caption>
             <thead>
-                <tr>
-                    <th>Year</th>
-                    <th>Title</th>
-                    <th>Director</th>
+                <tr id="thead">
+                    <th scope="col">Year</th>
+                    <th scope="col">Title</th>
+                    <th scope="col">Director</th>
                 </tr>
             </thead>
             <tbody>
@@ -187,11 +219,24 @@
                 </tr>
             </tbody>
             <tfoot>
-
+                <tr>
+                    <th scope="row" rowspan="2">Total de filmes</th>
+                    <td class="tdtfoot">Studio Ghibli</td>
+                    <td class="tdtfoot">23</td>
+                </tr>
+                <tr>
+                    <td class="tdtfoot">Hayao Miyazaki</td>
+                    <td class="tdtfoot">10</td>
+                </tr>
             </tfoot>
         </table>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam distinctio ut voluptatibus aut temporibus cumque, suscipit voluptas atque. Ipsa deleniti sunt laudantium, dicta aspernatur facere provident mollitia est architecto vel? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta repudiandae illum a vel obcaecati quae, assumenda laboriosam minus velit eius dolor ex ipsa, odio quisquam, quidem pariatur dolores fugit dolore.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam distinctio ut voluptatibus aut temporibus cumque, suscipit voluptas atque. Ipsa deleniti sunt laudantium, dicta aspernatur facere provident mollitia est architecto vel? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta repudiandae illum a vel obcaecati quae, assumenda laboriosam minus velit eius dolor ex ipsa, odio quisquam, quidem pariatur dolores fugit dolore.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam distinctio ut voluptatibus aut temporibus cumque, suscipit voluptas atque. Ipsa deleniti sunt laudantium, dicta aspernatur facere provident mollitia est architecto vel? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta repudiandae illum a vel obcaecati quae, assumenda laboriosam minus velit eius dolor ex ipsa, odio quisquam, quidem pariatur dolores fugit dolore.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam distinctio ut voluptatibus aut temporibus cumque, suscipit voluptas atque. Ipsa deleniti sunt laudantium, dicta aspernatur facere provident mollitia est architecto vel? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta repudiandae illum a vel obcaecati quae, assumenda laboriosam minus velit eius dolor ex ipsa, odio quisquam, quidem pariatur dolores fugit dolore.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam distinctio ut voluptatibus aut temporibus cumque, suscipit voluptas atque. Ipsa deleniti sunt laudantium, dicta aspernatur facere provident mollitia est architecto vel? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta repudiandae illum a vel obcaecati quae, assumenda laboriosam minus velit eius dolor ex ipsa, odio quisquam, quidem pariatur dolores fugit dolore.</p><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam distinctio ut voluptatibus aut temporibus cumque, suscipit voluptas atque. Ipsa deleniti sunt laudantium, dicta aspernatur facere provident mollitia est architecto vel? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta repudiandae illum a vel obcaecati quae, assumenda laboriosam minus velit eius dolor ex ipsa, odio quisquam, quidem pariatur dolores fugit dolore.</p><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam distinctio ut voluptatibus aut temporibus cumque, suscipit voluptas atque. Ipsa deleniti sunt laudantium, dicta aspernatur facere provident mollitia est architecto vel? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta repudiandae illum a vel obcaecati quae, assumenda laboriosam minus velit eius dolor ex ipsa, odio quisquam, quidem pariatur dolores fugit dolore.</p><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam distinctio ut voluptatibus aut temporibus cumque, suscipit voluptas atque. Ipsa deleniti sunt laudantium, dicta aspernatur facere provident mollitia est architecto vel? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta repudiandae illum a vel obcaecati quae, assumenda laboriosam minus velit eius dolor ex ipsa, odio quisquam, quidem pariatur dolores fugit dolore.</p>
     </main>
     <footer>
-
+        <p><a href="../index.html" rel="previous" target="_self">Go back</a></p>
     </footer>
 </body>
