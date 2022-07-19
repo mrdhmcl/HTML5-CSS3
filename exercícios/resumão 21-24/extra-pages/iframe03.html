@@ -36,7 +36,7 @@
         display: block;
         margin: auto;
         
-        height: 50vh;
+        height: 30vh;
         width: 48vw;
     }
 
@@ -45,7 +45,7 @@
         background-color: rgb(79, 79, 79, 70%);
         padding: 10px;
         border-radius: 20px;
-        margin: 20px auto 0 385px;
+        margin: 20px auto 0 370px;
         }
         
     a#home-button{
@@ -53,9 +53,11 @@
         text-decoration: none;
         }
 
-    a:hover{
-        font-weight: bold;
-        text-decoration: underline;
+    a#home-button:hover{
+        
+        background-color: rgba(79, 79, 79, 0.70);
+        padding: 5px;
+        border-radius: 20px;
         }
 </style>
 <body>
@@ -64,9 +66,9 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae optio eius placeat laboriosam explicabo possimus quas a velit vitae numquam nostrum omnis inventore, eos veniam unde quisquam quidem atque! Ad?</p>
         <ul>
             
-            <li><a href="extra-extra-pages/innerpage01.html" target="frame">First page</a></li>
-            <li><a href="extra-extra-pages/innerpage02.html" target="frame"></a>Second page</li>
-            <li><a href="extra-extra-pages/innerpage03.html" target="frame"></a>Third page</li>
+            <li><a href="extra-extra-pages/innerpage01.html" rel="next" target="frame">First page</a></li>
+            <li><a href="extra-extra-pages/innerpage02.html" rel="next" target="frame">Second page</a></li>
+            <li><a href="extra-extra-pages/innerpage03.html" rel="next" target="frame">Third page</a></li>
         </ul>
 
         <iframe srcdoc="
@@ -82,4 +84,5 @@
 
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi, veniam? Deleniti qui atque odio rerum hic nesciunt quam, suscipit dolorem obcaecati, delectus cupiditate quas, fugit magni. Illum reiciendis fugit porro!</p>
     </main>
+    <p id="a"><a id="home-button" href="../index.html" rel="previous" target="_self">Go back</a></p>
 </body>
