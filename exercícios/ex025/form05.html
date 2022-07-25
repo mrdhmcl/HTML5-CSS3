@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form study</title>
+</head>
+<body>
+    <h1>Form practice</h1>
+    <fieldset>
+        <legend>Sex</legend>
+            <form action="register.php" method="get">
+                <input type="radio" name="radio" id="imasc" value="M"> <label for="imasc">Masculine</label>
+                <br>
+                <input type="radio" name="radio" id="ifem" value="F"><label for="ifem">Feminine</label>
+            </form>
+    </fieldset>
+
+    <fieldset>
+        <legend>Favorite sports</legend>
+        <form action="register.php" method="get">
+            <input type="checkbox" name="basketball" id="ibask"> <label for="ibask">Basketball</label><br>
+            <input type="checkbox" name="football" id="ifootb"> <label for="ifootb">Football</label><br>
+            <input type="checkbox" name="swimming" id="iswim"> <label for="iswim">Swimming</label><br>
+            <input type="checkbox" name="tennis" id="itennis"> <label for="itennis">Tennis</label>
+        </form>
+    </fieldset>
+
+    <p>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </p>
+</body>
+</html>
