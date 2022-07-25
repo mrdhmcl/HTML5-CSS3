@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form study</title>
+</head>
+<body>
+    <h1>Form example</h1>
+    <fieldset>
+        <legend>Personal data</legend>
+        <form action="register.php" method="post" autocomplete="on">
+            <p>
+                <label for="iname">Name*</label>
+                <input type="text" name="name" id="iname" minlength="5" placeholder="full name" autocomplete="name" required>
+            </p>
+            <p>
+                <label for="iemail">E-mail*</label>
+                <input type="email" name="email" id="iemail" placeholder="username@email.com" autocomplete="email" required>
+            </p>
+            <p>
+                <label for="itelephone">Telephone*</label>
+                <input type="tel" name="telephone" id="itelephone" placeholder="(xx) xxxx-xxxx" autocomplete="mobile" required>
+            </p>
+            <p>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </p>
+        </form>
+    </fieldset>
+</body>
+</html>
