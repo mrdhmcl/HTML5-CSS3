@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact form</title>
+  <style>
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: darkred;
+    }
+
+    h1{
+      color: white;
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    section{
+      background-color: white;
+      max-width: 300px;
+      margin: auto;
+      padding: 10px;
+      border-radius: 20px;
+    }
+
+    input{
+      margin: 15px 0px;
+    }
+
+    
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Contact form</h1>
+  </header>
+  <section>
+    <fieldset>
+      <legend>Contact</legend>
+      <form action="#" method="post">
+        <label for="iname">Name:</label>
+        <input type="text" name="contactname" id="iname" autocomplete="name" autofocus required>
+        <br>
+        <label for="iemail">E-mail:</label>
+        <input type="email" name="contactemail" id="iemail" autocomplete="email" placeholder="email@email.com" pattern=".+@gmail\.com\.br" title="Only @gmail.com.br are allowed." minlength="8" maxlength="50"  required>
+        <br>
+        <label for="imessage">Comment:</label>
+        <br>
+        <textarea name="contactmessage" id="imessage" cols="30" rows="10" maxlength="1000" placeholder="Your comment can only have 1000 characters."></textarea>
+        <br>
+        <input id="button-submit" type="submit" value="Submit">
+      </form>
+    </fieldset>
+  </section>
+</body>
+</html>
