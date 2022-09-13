@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layout 2 columns Flexbox</title>
+  <style>
+    #container{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    aside{
+      flex-grow: 1;
+      background-color: lightgray;
+      border: 1px solid gray;
+    }
+
+    main{
+      flex-grow: 3;
+      background-color: darkgrey;
+      height: 97vh;
+      border: 1px solid gray;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <aside></aside>
+    <main></main>
+  </div>
+</body>
+</html>
