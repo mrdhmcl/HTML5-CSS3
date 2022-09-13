@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu Navigation Flexbox</title>
+  <style>
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+    }
+
+    header{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      gap: .8rem;
+    }
+
+    nav{
+      display: flex;
+      align-items: center;
+      gap: .8rem;
+    }
+
+    a{
+      text-decoration: none;
+      color: black;
+    }
+
+    button{
+      background-color: blue;
+      color: white;
+      padding: 6px 10px;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+      <img src="website-logo.png" alt="Website Logo" height="130px">
+      <nav>
+        <a href="#">HOME</a><a href="#">ABOUT</a><a href="#">SERVICES</a><a href="#">TESTIMONIALS</a>
+        <button>Contact</button>
+      </nav>
+  </header>
+</body>
+</html>
