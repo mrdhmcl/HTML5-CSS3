@@ -7,23 +7,21 @@
   <title>Document</title>
 
   <style>
-
     #container{
       display: flex;
       gap: .4rem;
     }
 
     img{
-      height: 80%;
-      width: 25%;
-    }
-
-    img#basket{
-      width: 30%;
+      height: 2rem;
+      width: 2rem;
     }
 
     button{
-      width: 70px;
+      display: flex;
+      align-items: center;
+      gap: .6rem;
+      line-height: 0;
       background-color: darkblue;
       color: white;
       padding: 5px;
@@ -37,16 +35,15 @@
 
 </head>
 <body>
-  <div id="container">
-    <button>
-      <img src="Button-Play-icon.png" alt="">
-      Watch
-    </button>
-
-    <button>
-      <img id="basket"c src="02-Basket-icon.png" alt="">
-      Buy
-    </button>
-  </div>
+    <div id="container">
+      <button>
+        <img src="Button-Play-icon.png" alt="">
+        Watch
+      </button>
+      <button>
+        <img id="basket"c src="02-Basket-icon.png" alt="">
+        Buy
+      </button>
+    </div>
 </body>
 </html>
